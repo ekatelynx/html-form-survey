@@ -9,14 +9,72 @@
         <form action="/form-handling-url" method="post">
             <fieldset>
                 <legend>Add user</legend>
+                    <div>
+                        <label for="firstName">First name</label>
+                        <input type="text" id="firstName" name="first_name">
+                    </div>
 
+                    <div>
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="last_name">
+                    </div>
 
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email_address">
+                    </div>
 
+                    <div>
+                        <label for="status">Status</label>
+                        <select id="status" name="user_status">
+                            <option value="student">Student</option>
+                            <option value="instructor">Instructor</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
 
+                    <div>
+                        <p>Choose your favorite programming language:</p>
+                    </div>
 
+                    <div>
+                        <label for="html">HTML</label>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                    </div>
 
+                    <div>
+                        <label for="css">CSS</label>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                    </div>
 
+                    <div>
+                        <label for="javascript">JavaScript</label>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    </div>
 
+                    <div>
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="currentDate">Current date</label>
+                        <input type="date" id="currentDate" name="current_date">
+                    </div>
+
+                    <div>
+                        <label for="signupfornewsletter">Sign up for newsletter</label>
+                        <input type="checkbox" id="signupfornewsletter" name="signupfornewsletter">
+                    </div>
+
+                    <div>
+                        <label for="agreetotermsandconditions">Agree to Terms and Conditions</label>
+                        <input type="checkbox" id="agreetotermsandconditions" name="signupfornewsletter">
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
 
             </fieldset>
         </form>
